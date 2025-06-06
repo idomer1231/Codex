@@ -22,7 +22,7 @@ Follow these steps to view the site on your machine:
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/idomer1231/Codex.git
+    git clone --branch work https://github.com/idomer1231/Codex.git
    ```
 
 2. Open a terminal inside the `balloons-website` folder and run:
