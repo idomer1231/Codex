@@ -7,11 +7,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-b84NhWfGOWIDRrU6a8Zw6ToOVJlLzx/29Qa58ae0q/QAdzTZziEtGlUZEM6I4vJ+mLjXmJvLCYOtJkRl6l9EUg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Balloons Galore</h1>
+        <button id="nav-toggle" aria-label="Toggle navigation">☰</button>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -23,8 +25,10 @@
         </nav>
     </header>
     <section id="hero">
-        <h2>Brighten your events with our colourful balloons!</h2>
-        <button id="cta">Get a Quote</button>
+        <div class="hero-content">
+            <h2>Brighten your events with our colourful balloons!</h2>
+            <button id="cta">Get a Quote</button>
+        </div>
     </section>
     <section id="about">
         <h2>About Us</h2>
@@ -32,10 +36,10 @@
     </section>
     <section id="services">
         <h2>Our Services</h2>
-        <ul>
-            <li>Event Decoration</li>
-            <li>Custom Balloon Bouquets</li>
-            <li>Delivery Service</li>
+        <ul class="services-list">
+            <li><i class="fas fa-star"></i> Event Decoration</li>
+            <li><i class="fas fa-gifts"></i> Custom Balloon Bouquets</li>
+            <li><i class="fas fa-truck"></i> Delivery Service</li>
         </ul>
     </section>
     <section id="gallery">
@@ -55,22 +59,33 @@
         <div class="testimonial-slide">"Our corporate event looked amazing." – Casey</div>
         <div class="testimonial-slide">"Highly recommend for birthdays!" – Jordan</div>
     </section>
+    <section id="faq">
+        <h2>FAQ</h2>
+        <details>
+            <summary>Do you deliver outside the city?</summary>
+            <p>Yes, we deliver within a 50km radius for a small fee.</p>
+        </details>
+        <details>
+            <summary>How far in advance should I book?</summary>
+            <p>We recommend booking at least two weeks before your event.</p>
+        </details>
+    </section>
     <section id="contact">
         <h2>Contact Us</h2>
         <form id="contact-form">
-            <label for="name">Name:</label>
+            <label for="name"><i class="fas fa-user"></i> Name:</label>
             <input type="text" id="name" name="name" required>
 
-            <label for="email">Email:</label>
+            <label for="email"><i class="fas fa-envelope"></i> Email:</label>
             <input type="email" id="email" name="email" required>
 
-            <label for="message">Message:</label>
+            <label for="message"><i class="fas fa-comment"></i> Message:</label>
             <textarea id="message" name="message" required></textarea>
 
             <button type="submit">Send</button>
         </form>
         <form id="subscribe-form">
-            <label for="subscribe-email">Subscribe for updates:</label>
+            <label for="subscribe-email"><i class="fas fa-paper-plane"></i> Subscribe for updates:</label>
             <input type="email" id="subscribe-email" name="email" placeholder="you@example.com" required>
             <button type="submit">Subscribe</button>
         </form>

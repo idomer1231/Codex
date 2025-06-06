@@ -33,6 +33,11 @@ const observer = new IntersectionObserver((entries) => {
 });
 document.querySelectorAll('section').forEach(sec => observer.observe(sec));
 
+// Mobile navigation toggle
+document.getElementById('nav-toggle').addEventListener('click', () => {
+    document.querySelector('nav').classList.toggle('open');
+});
+
 // Simple testimonial slider
 const slides = document.querySelectorAll('.testimonial-slide');
 let currentSlide = 0;

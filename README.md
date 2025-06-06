@@ -4,14 +4,14 @@
 
 This repository contains a demo website for a balloon decoration business.
 The site lives in the `balloons-website` directory and now includes a
-gallery, testimonials, animations and a newsletter form.
+gallery, testimonials, a FAQ section, animated hero banner and a newsletter form.
 
 - `index.html` – landing page with navigation, hero section, gallery,
   testimonials and contact forms.
-- `style.css` – modern styling with CSS variables, responsive layout and
-  animation helpers.
+- `style.css` – modern styling with CSS variables, responsive layout,
+  hero gradient animation and mobile navigation tweaks.
 - `script.js` – handles form submissions, fade‑in animations,
-  testimonial rotation and a back‑to‑top button.
+  testimonial rotation, a back‑to‑top button and mobile nav toggle.
 
 Open `index.html` in your browser to explore the site.
 
