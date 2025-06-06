@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Balloons Galore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,6 +16,8 @@
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -33,6 +38,23 @@
             <li>Delivery Service</li>
         </ul>
     </section>
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <img src="https://picsum.photos/seed/balloon1/300/200" alt="Balloons 1">
+            <img src="https://picsum.photos/seed/balloon2/300/200" alt="Balloons 2">
+            <img src="https://picsum.photos/seed/balloon3/300/200" alt="Balloons 3">
+            <img src="https://picsum.photos/seed/balloon4/300/200" alt="Balloons 4">
+            <img src="https://picsum.photos/seed/balloon5/300/200" alt="Balloons 5">
+            <img src="https://picsum.photos/seed/balloon6/300/200" alt="Balloons 6">
+        </div>
+    </section>
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonial-slide active">"The decorations were stunning!" – Alex</div>
+        <div class="testimonial-slide">"Our corporate event looked amazing." – Casey</div>
+        <div class="testimonial-slide">"Highly recommend for birthdays!" – Jordan</div>
+    </section>
     <section id="contact">
         <h2>Contact Us</h2>
         <form id="contact-form">
@@ -47,10 +69,16 @@
 
             <button type="submit">Send</button>
         </form>
+        <form id="subscribe-form">
+            <label for="subscribe-email">Subscribe for updates:</label>
+            <input type="email" id="subscribe-email" name="email" placeholder="you@example.com" required>
+            <button type="submit">Subscribe</button>
+        </form>
     </section>
     <footer>
         <p>&copy; 2024 Balloons Galore</p>
     </footer>
+    <button id="back-to-top" aria-label="Back to top">↑</button>
     <script src="script.js"></script>
 </body>
 </html>
